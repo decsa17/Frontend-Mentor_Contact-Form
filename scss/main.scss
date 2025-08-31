@@ -220,7 +220,7 @@ textarea.error + .error-message,
 
 .error-message, .input-query .error-message {
     display: none; // hide by default
-    color: $color-error;
+    color: $color-error;    
     font-size: 0.875em;
     margin-top: -1em;
     margin-bottom: 1em;
