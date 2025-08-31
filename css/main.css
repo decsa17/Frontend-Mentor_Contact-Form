@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: hsl(148, 38%, 91%);
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+main .container {
+  max-width: 600px;
+  margin: 1em;
+  padding: 20px;
+  padding-top: 10px;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 0.5em;
+}
+main .container h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: hsl(187, 24%, 22%);
+  text-align: left;
+}
+main .container label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: hsl(187, 24%, 22%);
+}
+main .container label span {
+  color: hsl(169, 82%, 27%);
+  margin-left: 0.25em;
+}
+main .container input, main .container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1.5em;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 0.25em;
+  font-size: 1em;
+  font-family: "Karla", sans-serif;
+}
+main .container input:focus, main .container textarea:focus {
+  outline: none;
+  border-color: hsl(169, 82%, 27%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+main .container textarea {
+  min-height: 150px;
+}
+main .container .radio-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 1em;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  font-size: 1em;
+  background: hsl(0, 0%, 100%);
+  transition: border-color 0.2s;
+}
+main .container .radio-box input[type=radio], main .container .radio-box textarea[type=radio] {
+  accent-color: hsl(169, 82%, 27%);
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: auto;
+}
+main .container .radio-box:hover, main .container .radio-box.active, main .container .radio-box.checked {
+  border-color: hsl(169, 82%, 27%);
+  background-color: hsl(148, 38%, 91%);
+}
+main .container .checkbox-container {
+  display: flex;
+  flex-direction: row;
+}
+main .container .checkbox-container input[type=checkbox], main .container .checkbox-container textarea[type=checkbox] {
+  accent-color: hsl(169, 82%, 27%);
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: auto;
+}
+main .container button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 1.5em;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(169, 82%, 27%);
+  border: none;
+  border-radius: 0.5em;
+}
+main .container #success-toast-message {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: small;
+  padding: 10px 15px;
+  border-radius: 0.5em;
+  background-color: hsl(187, 24%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+main .container #success-toast-message div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+main .container #success-toast-message div img {
+  width: 15px;
+  height: 15px;
+}
+main .container #success-toast-message.show {
+  display: block;
+  animation: fadeOut 3s forwards;
+  cursor: pointer;
+}
+main .container input:hover, main .container textarea:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+@media (min-width: 675px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .container {
+    width: 600px;
+  }
+  main .container .input-fullname, main .container .input-query {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .container .input-fullname div, main .container .input-fullname label, main .container .input-query div, main .container .input-query label {
+    flex: 1;
+  }
+}
+.error {
+  border: 2px solid hsl(0, 66%, 54%) !important;
+}
+
+input.error + .error-message,
+textarea.error + .error-message,
+.input-query.error .error-message {
+  display: block;
+}
+
+.error-message, .input-query .error-message {
+  display: none;
+  color: hsl(0, 66%, 54%);
+  font-size: 0.875em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+/*# sourceMappingURL=main.css.map */

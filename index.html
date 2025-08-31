@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+
+  <main>
+    <div class="container">
+      <form action="" novalidate> 
+        <h1>Contact Us</h1>
+
+        <div class="input-fullname"> <!-- 2 columns on 675px -->
+          <div>
+            <label for="first-name">First Name<span>*</span></label>
+            <input type="text" name="first-name" id="first-name" required>
+            <p class="error-message">This field is required</p>
+          </div>
+        
+          <div>
+            <label for="last-name">Last Name<span>*</span></label>
+            <input type="text" name="last-name" id="last-name" required>
+            <p class="error-message">This field is required</p>
+          </div>
+        </div>
+
+        <label for="email">Email Address<span>*</span></label>
+        <input type="email" name="email" id="email" required>
+        <p class="error-message">Please enter a valid email address</p>
+
+
+
+        <label for="query-type">Query Type<span>*</span></label>
+        <div class="input-query"> <!-- 2 columns on 675px -->
+        <label class="radio-box">
+          <input type="radio" name="query-type" value="general" required>
+          General Enquiry
+        </label>
+        <label class="radio-box">
+          <input type="radio" name="query-type" value="support" required>
+          Support Request
+        </label>
+        <p class="error-message">Please select a query type</p>
+        </div>
+
+        <label for="message">Message<span>*</span></label>
+        <textarea name="message" id="message" required></textarea>
+        <p class="error-message">This field is required</p>
+
+        <div class="checkbox-container">
+          <input type="checkbox" name="consent" required>
+          <label for="consent" class="checkbox-box">
+            I consent to being contacted by the team<span>*</span>
+          </label>
+          <p class="error-message">To submit this form, please consent to being contacted</p>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="success-toast-message">
+        <div>
+          <img src="/assets/images/icon-success-check.svg" alt="check icon">
+          <h3>Message Sent!</h3>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+
+
+    </div>
+  </main>
+  
+
+<script src="src/main.js"></script>
+</body>
+</html>
