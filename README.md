@@ -46,7 +46,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/decsa17/Frontend-Mentor_Contact-Form)
-- Live Site URL: [Live Site](https://decsa17.github.io/Frontend-Mentor_Contact-Form/))
+- Live Site URL: [Live Site](https://decsa17.github.io/Frontend-Mentor_Contact-Form/)
 
 ## My process
 
